@@ -192,9 +192,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     BlackTheme
 
-# BootAnimation
-include vendor/proton/config/bootanimation.mk
-
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED ?= true
 ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
