@@ -80,8 +80,11 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# protonplus packages
+PRODUCT_PACKAGES += \
+    RepainterServicePriv
+
 ifeq ($(PROTON_BUILD_VARIANT),OFFICIAL)
-# ProtonPlus packages
 PRODUCT_PACKAGES += \
     Updater
 
@@ -184,6 +187,24 @@ PRODUCT_PACKAGES += \
 # CustomPixelLauncherOverlay
 PRODUCT_PACKAGES += \
     CustomPixelLauncherOverlay
+
+# Themes
+PRODUCT_PACKAGES += \
+    BlackTheme
+
+# BootAnimation
+include vendor/proton/config/bootanimation.mk
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED ?= true
+ifeq ($(TARGET_FACE_UNLOCK_SUPPORTED),true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.face_unlock_service.enabled=$(TARGET_FACE_UNLOCK_SUPPORTED)
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.biometrics.face.xml
+endif
 
 # Fonts
 include vendor/proton/config/fonts.mk
