@@ -391,25 +391,18 @@
     </family>
     <alias name="opposans-medium" to="opposans" weight="500" />
 
-    <family customizationType="new-named-family" name="oneplusslate">
-    <font weight="300" style="normal">SlateFromOP-Light.ttf</font>
-    <font weight="400" style="normal">SlateFromOP-Regular.ttf</font>
+    <family customizationType="new-named-family" name="samsungone">
+        <font weight="400" style="normal">SamsungOne.ttf</font>
     </family>
-    <alias name="oneplusslate-bold" to="oneplusslate" weight="600" />
+    <alias name="samsungone-semi-bold" to="samsungone" weight="600" />
+    <alias name="samsungone-bold" to="samsungone" weight="700" />
+    <alias name="times" to="samsungone" />
+    <alias name="times new roman" to="samsungone" />
+    <alias name="palatino" to="samsungone" />
+    <alias name="georgia" to="samsungone" />
+    <alias name="baskerville" to="samsungone" />
+    <alias name="goudy" to="samsungone" />
+    <alias name="fantasy" to="samsungone" />
+    <alias name="ITC Stone Serif" to="samsungone" />
 
-    <family customizationType="new-named-family" name="harmonyos-sans">
-        <font weight="100" style="normal">HarmonyOS-Sans-Thin.ttf</font>
-        <font weight="100" style="italic">HarmonyOS-Sans-ThinItalic.ttf</font>
-        <font weight="300" style="normal">HarmonyOS-Sans-Light.ttf</font>
-        <font weight="300" style="italic">HarmonyOS-Sans-LightItalic.ttf</font>
-        <font weight="400" style="normal">HarmonyOS-Sans-Regular.ttf</font>
-        <font weight="400" style="italic">HarmonyOS-Sans-Italic.ttf</font>
-        <font weight="500" style="normal">HarmonyOS-Sans-Medium.ttf</font>
-        <font weight="500" style="italic">HarmonyOS-Sans-MediumItalic.ttf</font>
-        <font weight="700" style="normal">HarmonyOS-Sans-Bold.ttf</font>
-        <font weight="700" style="italic">HarmonyOS-Sans-BoldItalic.ttf</font>
-        <font weight="900" style="normal">HarmonyOS-Sans-Black.ttf</font>
-        <font weight="900" style="italic">HarmonyOS-Sans-BlackItalic.ttf</font>
-    </family>
-    <alias name="harmonyos-sans-medium" to="harmonyos-sans" weight="500"/>
 </fonts-modification>

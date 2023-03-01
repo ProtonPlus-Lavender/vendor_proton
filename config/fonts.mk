@@ -11,5 +11,5 @@ PRODUCT_PACKAGES += \
     FontManropeOverlay \
     FontOneplusSlateSourceOverlay \
     FontOppoSansOverlay \
-    RobotoFallback-VF.ttf 
-
+    RobotoFallback-VF.ttf \
+    FontSamsungOneSourceOverlay
